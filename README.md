@@ -6,15 +6,23 @@ mysql-vagrant is a quick way to run mysql locally for development without an ssh
 
      $ vagrant up
 
-### Connect to mysql:
+### Connect to mysql from external:
 
 - host: 33.33.33.1
 - username: root
 - password: root
 
-### From sequel pro
+### Ensure MySQL is available 
 
-<img src="sequel-pro.png"/>
+Restart MySQL if down by running:
+```
+sudo /etc/init.d/mysql restart
+```
+
+verify by running:
+```
+mysql -u root -p
+```
 
 ### Warning
 
